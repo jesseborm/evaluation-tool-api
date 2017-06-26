@@ -1,14 +1,14 @@
-// src/services/recipes/recipes.hooks.js
+// src/services/batches/batches.hooks.js
 
 const { authenticate } = require('feathers-authentication').hooks;
 const { restrictToOwner, associateCurrentUser, restrictToAuthenticated } = require('feathers-authentication-hooks');
 const { populate } = require('feathers-hooks-common');
 
-// Configure where we will get the author data from (the users service),
-// how to fetch it (by authorId), and where to put it (author).
 const studentSchema = {
   include: {
-    service: 'users',
+    // needs to change, students are not users. can they come from batches???
+    // Maybe better to make seperate student service
+    service: 'batches', // does this work??
     nameAs: 'students',
     parentField: 'studentId',
     childField: '_id',
@@ -23,7 +23,11 @@ const restrict = [
 
 module.exports = {
   before: {
-    all: [],
+    all: [
+      ...restrict
+      // Don't need this because only teachers can login.
+      // associateCurrentUser({ as: 'authorId' }),
+    ],
     find: [],
     get: [],
     create: [],
