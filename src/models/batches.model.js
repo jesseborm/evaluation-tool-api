@@ -6,7 +6,12 @@ module.exports = function (app) {
   const mongooseClient = app.get('mongooseClient');
   const { Schema } = mongooseClient
 
-  const studentSchema = new mongooseClient.Schema({
+  const evaluationSchema = new Schema({
+    date: { type: Date, required: true },
+    color: { type: String },
+    remark: { type: String }
+  })
+  const studentSchema = new Schema({
     fullName: { type: String, required: true },
     picture: { type: String, required: true },
     evaluation: [evaluationSchema]
@@ -14,11 +19,6 @@ module.exports = function (app) {
 
   // better to use evaluationSchema as Object key=date and value=color.
 
-  const evaluationSchema = new mongooseClient.Schema({
-    date: { type: Date, required: true },
-    color: { type: String },
-    remark: { type: String }
-  })
 
   const batches = new mongooseClient.Schema({
     batchNumber: { type: String, required: true },
