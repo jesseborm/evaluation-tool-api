@@ -23,7 +23,7 @@ const batches = [
       evaluation: {
         date: new Date(2017, 05, 15),
         color: "green",
-        remark: "excellent"
+        remark: "Excellent"
       }
     },
     {
@@ -31,8 +31,17 @@ const batches = [
       picture: 'https://s-media-cache-ak0.pinimg.com/736x/34/ba/bc/34babc4956f8e334c3036747d8b8a3dc--monsters-university-disney-characters.jpg',
       evaluation: {
         date: new Date(2017, 05, 15),
-        color: "green",
-        remark: "excellent"
+        color: "yellow",
+        remark: "Brilliant"
+      }
+    },
+    {
+      fullName: 'Bandi',
+      picture: 'https://s-media-cache-ak0.pinimg.com/736x/34/ba/bc/34babc4956f8e334c3036747d8b8a3dc--monsters-university-disney-characters.jpg',
+      evaluation: {
+        date: new Date(2017, 05, 15),
+        color: "red",
+        remark: "Excellent"
       }
     }]
   },
@@ -57,6 +66,15 @@ const batches = [
         date: new Date(2017, 05, 15),
         color: "yellow",
         remark: "Go, go , go!!"
+      }
+    },
+    {
+      fullName: 'Chris',
+      picture: 'https://s-media-cache-ak0.pinimg.com/736x/34/ba/bc/34babc4956f8e334c3036747d8b8a3dc--monsters-university-disney-characters.jpg',
+      evaluation: {
+        date: new Date(2017, 05, 15),
+        color: "green",
+        remark: "excellent"
       }
     }]
   }
