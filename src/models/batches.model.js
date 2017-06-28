@@ -8,16 +8,15 @@ module.exports = function (app) {
 
   const evaluationSchema = new Schema({
     date: { type: Date, required: true },
-    color: { type: String },
+    color: { type: String, default: undefined },
     remark: { type: String }
   })
   const studentSchema = new Schema({
     fullName: { type: String, required: true },
-    picture: { type: String, required: true },
+    picture: { type: String }, //, required: true
     evaluation: [evaluationSchema]
   })
 
-  // better to use evaluationSchema as Object key=date and value=color.
 
 
   const batches = new mongooseClient.Schema({
