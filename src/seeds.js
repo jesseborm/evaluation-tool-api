@@ -11,9 +11,7 @@ const user = {
   password: 'qwe123'
 }
 
-changeDate(date) {
-  return date.getDate() + "/" + (date.getMonth() + 1) + "/" + date.getFullYear()
-}
+
 
 const batches = [
   {
@@ -24,7 +22,7 @@ const batches = [
     {
       fullName: 'Han',
       picture: 'https://s-media-cache-ak0.pinimg.com/736x/34/ba/bc/34babc4956f8e334c3036747d8b8a3dc--monsters-university-disney-characters.jpg',
-      evaluation: [
+      evaluations: [
         {
           date: new Date(2017, 05, 15),
           color: "green",
@@ -45,7 +43,7 @@ const batches = [
     {
       fullName: 'Maressa',
       picture: 'https://s-media-cache-ak0.pinimg.com/736x/34/ba/bc/34babc4956f8e334c3036747d8b8a3dc--monsters-university-disney-characters.jpg',
-      evaluation: [
+      evaluations: [
         {
           date: new Date(2017, 05, 16),
           color: "yellow",
@@ -66,7 +64,7 @@ const batches = [
     {
       fullName: 'Bandi',
       picture: 'https://s-media-cache-ak0.pinimg.com/736x/34/ba/bc/34babc4956f8e334c3036747d8b8a3dc--monsters-university-disney-characters.jpg',
-      evaluation: [
+      evaluations: [
         {
           date: new Date(2017, 05, 15),
           color: "red",
@@ -93,7 +91,7 @@ const batches = [
     {
       fullName: 'Bram',
       picture: 'https://s-media-cache-ak0.pinimg.com/736x/34/ba/bc/34babc4956f8e334c3036747d8b8a3dc--monsters-university-disney-characters.jpg',
-      evaluation: [
+      evaluations: [
         {
           date: new Date(2017, 09, 15),
           color: "red",
@@ -114,7 +112,7 @@ const batches = [
     {
       fullName: 'Ann',
       picture: 'https://s-media-cache-ak0.pinimg.com/736x/34/ba/bc/34babc4956f8e334c3036747d8b8a3dc--monsters-university-disney-characters.jpg',
-      evaluation: [
+      evaluations: [
         {
           date: new Date(2017, 09, 15),
           color: "yellow",
@@ -135,7 +133,7 @@ const batches = [
     {
       fullName: 'Chris',
       picture: 'https://s-media-cache-ak0.pinimg.com/736x/34/ba/bc/34babc4956f8e334c3036747d8b8a3dc--monsters-university-disney-characters.jpg',
-      evaluation: [
+      evaluations: [
         {
           date: new Date(2017, 09, 15),
           color: "green",
