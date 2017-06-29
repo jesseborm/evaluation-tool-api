@@ -11,6 +11,8 @@ const user = {
   password: 'qwe123'
 }
 
+
+
 const batches = [
   {
     batchNumber: '11',
@@ -20,29 +22,65 @@ const batches = [
     {
       fullName: 'Han',
       picture: 'https://s-media-cache-ak0.pinimg.com/736x/34/ba/bc/34babc4956f8e334c3036747d8b8a3dc--monsters-university-disney-characters.jpg',
-      evaluation: {
-        date: new Date(2017, 05, 15),
-        color: "green",
-        remark: "Excellent"
-      }
+      evaluation: [
+        {
+          date: new Date(2017, 05, 15),
+          color: "green",
+          remark: "Excellent"
+        },
+        {
+          date: new Date(2017, 05, 16),
+          color: "yellow",
+          remark: "Beautiful"
+        },
+        {
+          date: new Date(2017, 05, 17),
+          color: "red",
+          remark: "Brilliant"
+        }
+      ]
     },
     {
       fullName: 'Maressa',
       picture: 'https://s-media-cache-ak0.pinimg.com/736x/34/ba/bc/34babc4956f8e334c3036747d8b8a3dc--monsters-university-disney-characters.jpg',
-      evaluation: {
-        date: new Date(2017, 05, 15),
-        color: "yellow",
-        remark: "Brilliant"
-      }
+      evaluation: [
+        {
+          date: new Date(2017, 05, 16),
+          color: "yellow",
+          remark: "Brilliant"
+        },
+        {
+          date: new Date(2017, 05, 16),
+          color: "green",
+          remark: "Great"
+        },
+        {
+          date: new Date(2017, 05, 17),
+          color: "red",
+          remark: "Nice"
+        }
+      ]
     },
     {
       fullName: 'Bandi',
       picture: 'https://s-media-cache-ak0.pinimg.com/736x/34/ba/bc/34babc4956f8e334c3036747d8b8a3dc--monsters-university-disney-characters.jpg',
-      evaluation: {
-        date: new Date(2017, 05, 15),
-        color: "red",
-        remark: "Excellent"
-      }
+      evaluation: [
+        {
+          date: new Date(2017, 05, 15),
+          color: "red",
+          remark: "Excellent"
+        },
+        {
+          date: new Date(2017, 05, 16),
+          color: "yellow",
+          remark: "Fantastic"
+        },
+        {
+          date: new Date(2017, 05, 17),
+          color: "green",
+          remark: "Brilliant"
+        }
+      ]
     }]
   },
   {
@@ -53,29 +91,65 @@ const batches = [
     {
       fullName: 'Bram',
       picture: 'https://s-media-cache-ak0.pinimg.com/736x/34/ba/bc/34babc4956f8e334c3036747d8b8a3dc--monsters-university-disney-characters.jpg',
-      evaluation: {
-        date: new Date(2017, 05, 15),
-        color: "red",
-        remark: "Do better!"
-      }
+      evaluation: [
+        {
+          date: new Date(2017, 09, 15),
+          color: "red",
+          remark: "Nice!"
+        },
+        {
+          date: new Date(2017, 09, 16),
+          color: "yellow",
+          remark: "Do better!"
+        },
+        {
+          date: new Date(2017, 09, 17),
+          color: "green",
+          remark: "Great!"
+        }
+      ]
     },
     {
       fullName: 'Ann',
       picture: 'https://s-media-cache-ak0.pinimg.com/736x/34/ba/bc/34babc4956f8e334c3036747d8b8a3dc--monsters-university-disney-characters.jpg',
-      evaluation: {
-        date: new Date(2017, 05, 15),
-        color: "yellow",
-        remark: "Go, go , go!!"
-      }
+      evaluation: [
+        {
+          date: new Date(2017, 09, 15),
+          color: "yellow",
+          remark: "Go, go , go!!"
+        },
+        {
+          date: new Date(2017, 09, 16),
+          color: "green",
+          remark: "Come on!"
+        },
+        {
+          date: new Date(2017, 09, 17),
+          color: "red",
+          remark: "Do better!"
+        }
+      ]
     },
     {
       fullName: 'Chris',
       picture: 'https://s-media-cache-ak0.pinimg.com/736x/34/ba/bc/34babc4956f8e334c3036747d8b8a3dc--monsters-university-disney-characters.jpg',
-      evaluation: {
-        date: new Date(2017, 05, 15),
-        color: "green",
-        remark: "excellent"
-      }
+      evaluation: [
+        {
+          date: new Date(2017, 09, 15),
+          color: "green",
+          remark: "excellent"
+        },
+        {
+          date: new Date(2017, 09, 16),
+          color: "red",
+          remark: "Do better!"
+        },
+        {
+          date: new Date(2017, 09, 17),
+          color: "yellow",
+          remark: "Nice!"
+        }
+      ]
     }]
   }
 ]

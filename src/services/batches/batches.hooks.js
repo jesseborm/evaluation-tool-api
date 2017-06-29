@@ -15,13 +15,16 @@ const { populate } = require('feathers-hooks-common');
 //   }
 // };
 
-// const create = require('../../hooks/create-game')
+// const create = require('../../hooks/')
 
 
 const restrict = [
   authenticate('jwt'),
   restrictToAuthenticated(),
 ];
+
+
+const addStudentHook = require('../../hooks/add-student-hook');
 
 
 module.exports = {
@@ -35,7 +38,7 @@ module.exports = {
     get: [],
     create: [...restrict],
     update: [...restrict],
-    patch: [...restrict],
+    patch: [...restrict, addStudentHook()],
     remove: [...restrict]
   },
 
