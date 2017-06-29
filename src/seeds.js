@@ -22,16 +22,16 @@ const batches = [
     {
       fullName: 'Han',
       picture: 'https://s-media-cache-ak0.pinimg.com/736x/34/ba/bc/34babc4956f8e334c3036747d8b8a3dc--monsters-university-disney-characters.jpg',
-      evaluations: [
+      evaluation: [
         {
           date: new Date(2017, 05, 15),
           color: "green",
           remark: "Excellent"
         },
-       {
-        date: new Date(2017, 05, 16),
-        color: "yellow",
-        remark: "Beautiful"
+        {
+          date: new Date(2017, 05, 16),
+          color: "yellow",
+          remark: "Beautiful"
         },
         {
           date: new Date(2017, 05, 17),
@@ -43,7 +43,7 @@ const batches = [
     {
       fullName: 'Maressa',
       picture: 'https://s-media-cache-ak0.pinimg.com/736x/34/ba/bc/34babc4956f8e334c3036747d8b8a3dc--monsters-university-disney-characters.jpg',
-      evaluations: [
+      evaluation: [
         {
           date: new Date(2017, 05, 16),
           color: "yellow",
@@ -64,7 +64,7 @@ const batches = [
     {
       fullName: 'Bandi',
       picture: 'https://s-media-cache-ak0.pinimg.com/736x/34/ba/bc/34babc4956f8e334c3036747d8b8a3dc--monsters-university-disney-characters.jpg',
-      evaluations: [
+      evaluation: [
         {
           date: new Date(2017, 05, 15),
           color: "red",
@@ -91,7 +91,7 @@ const batches = [
     {
       fullName: 'Bram',
       picture: 'https://s-media-cache-ak0.pinimg.com/736x/34/ba/bc/34babc4956f8e334c3036747d8b8a3dc--monsters-university-disney-characters.jpg',
-      evaluations: [
+      evaluation: [
         {
           date: new Date(2017, 09, 15),
           color: "red",
@@ -112,7 +112,7 @@ const batches = [
     {
       fullName: 'Ann',
       picture: 'https://s-media-cache-ak0.pinimg.com/736x/34/ba/bc/34babc4956f8e334c3036747d8b8a3dc--monsters-university-disney-characters.jpg',
-      evaluations: [
+      evaluation: [
         {
           date: new Date(2017, 09, 15),
           color: "yellow",
@@ -133,7 +133,7 @@ const batches = [
     {
       fullName: 'Chris',
       picture: 'https://s-media-cache-ak0.pinimg.com/736x/34/ba/bc/34babc4956f8e334c3036747d8b8a3dc--monsters-university-disney-characters.jpg',
-      evaluations: [
+      evaluation: [
         {
           date: new Date(2017, 09, 15),
           color: "green",

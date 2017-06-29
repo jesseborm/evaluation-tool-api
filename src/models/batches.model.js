@@ -6,7 +6,7 @@ module.exports = function (app) {
   const mongooseClient = app.get('mongooseClient');
   const { Schema } = mongooseClient
 
-  const evaluationsSchema = new Schema({
+  const evaluationSchema = new Schema({
     date: { type: Date, required: true },
     color: { type: String, default: undefined },
     remark: { type: String }
@@ -14,7 +14,7 @@ module.exports = function (app) {
   const studentSchema = new Schema({
     fullName: { type: String, required: true },
     picture: { type: String }, //, required: true
-    evaluations: [evaluationsSchema]
+    evaluation: [evaluationSchema]
   })
 
 
