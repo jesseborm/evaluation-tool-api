@@ -30,7 +30,7 @@ const addStudentHook = require('../../hooks/add-student-hook');
 module.exports = {
   before: {
     all: [
-
+        ...restrict
       // Don't need this because only teachers can login.
       // associateCurrentUser({ as: 'authorId' }),
     ],

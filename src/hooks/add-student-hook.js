@@ -5,13 +5,15 @@ module.exports = function (options = {}) { // eslint-disable-line no-unused-vars
   return function (hook) {
     // Hooks can either return nothing or a promise
     // that resolves with the `hook` object for asynchronous operations
+    console.log(hook);
+    debugger
     if (hook.data.newStudent === undefined) return Promise.resolve(hook);
 
     const batches = hook.app.service('batches')
 
     return hook.app.service('batches').get(hook.id)
+    // console.log(batch);
       .then((batch) => {
-        // console.log(batch);
         const { students } = batch
         hook.data = {
           students: students.concat(hook.data.newStudent)
