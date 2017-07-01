@@ -7,14 +7,19 @@ module.exports = function (options = {}) { // eslint-disable-line no-unused-vars
     // that resolves with the `hook` object for asynchronous operations
     console.log(hook);
     // debugger
-    if (hook.data.newStudent === undefined) return Promise.resolve(hook);
+    if (hook.data.fullName === undefined) return Promise.resolve(hook);
 
     return hook.app.service('batches').get(hook.id)
     // console.log(batch);
       .then((batch) => {
         const { students } = batch
+        // hook.data.evaluation.color = "grey"
+        hook.data.evaluation = [{}]
+        // hook.data.evaluation.color = "grey"
+
+
         hook.data = {
-          students: students.concat(hook.data.newStudent)
+          students: students.concat(hook.data)
         }
       })
     return Promise.resolve(hook); // is this the right place
