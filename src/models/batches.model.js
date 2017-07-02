@@ -9,8 +9,9 @@ module.exports = function (app) {
   const evaluationSchema = new Schema({
     date: { type: Date, required: true },
     color: { type: String, default: "grey" },
-    remark: { type: String }
+    remark: { type: String, default: null }
   })
+  
   const studentSchema = new Schema({
     fullName: { type: String, required: true },
     picture: { type: String }, //, required: true
