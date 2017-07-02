@@ -27,6 +27,9 @@ const restrict = [
 const addStudentHook = require('../../hooks/add-student-hook');
 
 
+const removeStudent = require('../../hooks/remove-student');
+
+
 module.exports = {
   before: {
     all: [
@@ -38,7 +41,7 @@ module.exports = {
     get: [],
     create: [...restrict],
     update: [...restrict],
-    patch: [...restrict, addStudentHook()],
+    patch: [...restrict, addStudentHook(), removeStudent()],
     remove: [...restrict]
   },
 
