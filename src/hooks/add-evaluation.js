@@ -13,22 +13,28 @@ module.exports = function (options = {}) { // eslint-disable-line no-unused-vars
     // console.log(batch);
       .then((batch) => {
         const { students } = batch
-        const student = students
-        .find(stud => stud._id.toString() === hook.data.studentId.toString())
-        const { evaluation } = student
-        console.log(evaluation);
+        const newStudents = students.map((s) => {
+          if(s._id.toString() === hook.data.studentId.toString()) {
+            s.evaluation = s.evaluation.concat(hook.data.evaluation)
+          }
+          return s
+        })
 
-
-    //     // hook.data.evaluation.color = "grey"
-    //     hook.data.evaluation = [{}]
-    //     // hook.data.evaluation.color = "grey"
-    //
-    //
         hook.data = {
-          evaluation: evaluation.concat(hook.data.evaluation)
+          students: newStudents
         }
-        console.log(hook.data);
       })
+// alternative -> result is not updated
+        // const student = students
+      //   .find(stud => stud._id.toString() === hook.data.studentId.toString())
+      //   const { evaluation } = student
+      //   console.log(evaluation);
+      //
+      //   hook.data = {
+      //     evaluation: evaluation.concat(hook.data.evaluation)
+      //   }
+      //   console.log(hook.data);
+      // })
 
 
     return Promise.resolve(hook);
