@@ -6,7 +6,6 @@ module.exports = function (options = {}) { // eslint-disable-line no-unused-vars
     // Hooks can either return nothing or a promise
     // that resolves with the `hook` object for asynchronous operations
     console.log(hook);
-    // debugger
     if (hook.data.fullName === undefined) return Promise.resolve(hook);
 
     return hook.app.service('batches').get(hook.id)
