@@ -27,8 +27,7 @@ module.exports = function (options = {}) { // eslint-disable-line no-unused-vars
 
 
 // alternative -> result is not updated
-        // const student = students
-      //   .find(stud => stud._id.toString() === hook.data.studentId.toString())
+      //   const student = students.find(stud => stud._id.toString() === hook.data.studentId.toString())
       //   const { evaluation } = student
       //   console.log(evaluation);
       //
