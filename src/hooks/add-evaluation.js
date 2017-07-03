@@ -24,6 +24,8 @@ module.exports = function (options = {}) { // eslint-disable-line no-unused-vars
           students: newStudents
         }
       })
+
+
 // alternative -> result is not updated
         // const student = students
       //   .find(stud => stud._id.toString() === hook.data.studentId.toString())

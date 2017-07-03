@@ -81,6 +81,69 @@ const batches = [
           remark: "Brilliant"
         }
       ]
+    },
+    {
+      fullName: 'Steve',
+      picture: 'https://s-media-cache-ak0.pinimg.com/736x/34/ba/bc/34babc4956f8e334c3036747d8b8a3dc--monsters-university-disney-characters.jpg',
+      evaluation: [
+        {
+          date: new Date(2017, 05, 15),
+          color: "red",
+          remark: "Excellent"
+        },
+        {
+          date: new Date(2017, 05, 16),
+          color: "yellow",
+          remark: "Fantastic"
+        },
+        {
+          date: new Date(2017, 05, 17),
+          color: "green",
+          remark: "Brilliant"
+        }
+      ]
+    },
+    {
+      fullName: 'Tim',
+      picture: 'https://s-media-cache-ak0.pinimg.com/736x/34/ba/bc/34babc4956f8e334c3036747d8b8a3dc--monsters-university-disney-characters.jpg',
+      evaluation: [
+        {
+          date: new Date(2017, 05, 15),
+          color: "red",
+          remark: "Excellent"
+        },
+        {
+          date: new Date(2017, 05, 16),
+          color: "yellow",
+          remark: "Fantastic"
+        },
+        {
+          date: new Date(2017, 05, 17),
+          color: "red",
+          remark: "Brilliant"
+        }
+      ]
+    },
+    {
+      fullName: 'Elizabeth',
+      picture: 'https://s-media-cache-ak0.pinimg.com/736x/34/ba/bc/34babc4956f8e334c3036747d8b8a3dc--monsters-university-disney-characters.jpg',
+      evaluation: [
+        {
+          date: new Date(2017, 05, 15),
+          color: "red",
+          remark: "Excellent"
+        },
+        {
+          date: new Date(2017, 05, 16),
+          color: "yellow",
+          remark: "Fantastic"
+        },
+        {
+          date: new Date(2017, 05, 17),
+          color: "yellow",
+          remark: "Brilliant"
+        }
+      ]
     }]
   },
   {
@@ -127,6 +190,69 @@ const batches = [
           date: new Date(2017, 09, 17),
           color: "red",
           remark: "Do better!"
+        }
+      ]
+    },
+    {
+      fullName: 'Omar',
+      picture: 'https://s-media-cache-ak0.pinimg.com/736x/34/ba/bc/34babc4956f8e334c3036747d8b8a3dc--monsters-university-disney-characters.jpg',
+      evaluation: [
+        {
+          date: new Date(2017, 09, 15),
+          color: "red",
+          remark: "Nice!"
+        },
+        {
+          date: new Date(2017, 09, 16),
+          color: "yellow",
+          remark: "Do better!"
+        },
+        {
+          date: new Date(2017, 09, 17),
+          color: "green",
+          remark: "Great!"
+        }
+      ]
+    },
+    {
+      fullName: 'Claudia',
+      picture: 'https://s-media-cache-ak0.pinimg.com/736x/34/ba/bc/34babc4956f8e334c3036747d8b8a3dc--monsters-university-disney-characters.jpg',
+      evaluation: [
+        {
+          date: new Date(2017, 09, 15),
+          color: "red",
+          remark: "Nice!"
+        },
+        {
+          date: new Date(2017, 09, 16),
+          color: "yellow",
+          remark: "Do better!"
+        },
+        {
+          date: new Date(2017, 09, 17),
+          color: "yellow",
+          remark: "Great!"
+        }
+      ]
+    },
+    {
+      fullName: 'Ilsmarie',
+      picture: 'https://s-media-cache-ak0.pinimg.com/736x/34/ba/bc/34babc4956f8e334c3036747d8b8a3dc--monsters-university-disney-characters.jpg',
+      evaluation: [
+        {
+          date: new Date(2017, 09, 15),
+          color: "red",
+          remark: "Nice!"
+        },
+        {
+          date: new Date(2017, 09, 16),
+          color: "yellow",
+          remark: "Do better!"
+        },
+        {
+          date: new Date(2017, 09, 17),
+          color: "red",
+          remark: "Great!"
         }
       ]
     },

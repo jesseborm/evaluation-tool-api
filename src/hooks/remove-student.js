@@ -6,7 +6,15 @@ module.exports = function (options = {}) { // eslint-disable-line no-unused-vars
     // Hooks can either return nothing or a promise
     // that resolves with the `hook` object for asynchronous operations
 
-    // if (!hook.data) return Promise.resolve(hook);
+    if ( hook.data.remove === undefined) return Promise.resolve(hook)
+
+      return hook.app.service('batches').get(hook.id).then((batch) =>{
+
+        students = batch.students.filter((stud) => {
+          return stud._id != hook.data.student
+        })
+        hook.data.students = students
+       })
 
 
     return Promise.resolve(hook);
